@@ -11,3 +11,105 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bg-black-custom{
+  background: #000000 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.slidebar{
+  height: 100vh;
+}
+.slidebar ul{
+  list-style-type:none ;
+  padding: 0px;
+}
+.slidebar li{
+  padding-left: 15%;
+  padding-top: 8%;
+  padding-right: 8%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.slidebar ul a{
+  text-decoration: none;
+  color: white;
+}
+.slidebar ul a li::before{
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.slidebar ul a li:hover{
+  background: #283141 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.slidebar-selected li{
+  background: #283141 0% 0% no-repeat padding-box;
+  opacity: 1;
+  padding-left: 13%;
+}
+
+:root{
+  --slidebar-workspace1: #FFFFFF;
+  --slidebar-workspace2: #F56565;
+  --slidebar-workspace3: #ECC94B;
+  --slidebar-workspace4: #48BB78;
+  --slidebar-workspace5: #38B2AC;
+  --slidebar-workspace6: #4299E1;
+}
+
+.slidebar-workspace1 li::before{
+  background-color: var(--slidebar-workspace1);
+}
+.slidebar-workspace1.slidebar-selected li{
+  border-left: 5px var(--slidebar-workspace1) solid;
+}
+
+.slidebar-workspace2 li::before{
+  background-color: var(--slidebar-workspace2);
+}
+.slidebar-workspace2.slidebar-selected li{
+  border-left: 5px var(--slidebar-workspace2) solid;
+}
+
+.slidebar-workspace3 li::before{
+  background-color: var(--slidebar-workspace3);
+}
+.slidebar-workspace3.slidebar-selected li{
+  border-left: 5px var(--slidebar-workspace3) solid;
+}
+
+.slidebar-workspace4 li::before{
+  background-color: var(--slidebar-workspace4);
+}
+.slidebar-workspace4.slidebar-selected li{
+  border-left: 5px var(--slidebar-workspace4) solid;
+}
+
+.slidebar-workspace5 li::before{
+  background-color: var(--slidebar-workspace5);
+}
+.slidebar-workspace5.slidebar-selected li{
+  border-left: 5px var(--slidebar-workspace5) solid;
+}
+
+.slidebar-workspace6 li::before{
+  background-color: var(--slidebar-workspace6);
+}
+.slidebar-workspace6.slidebar-selected li{
+  border-left: 5px var(--slidebar-workspace6) solid;
+}
+
+.logo{
+  width: 80%;
+  margin-left: 10%;
+}
+.avatar{
+  border-radius: 50%;
+  width: 40%;
+}
