@@ -7,14 +7,14 @@ export default function Slidebar(){
     console.log(userAuth)
     return (
         <div className="slidebar bg-black-custom">
-            <div className="border-bottom p-4">
+            <div className="border-bottom p-3">
                 <img src={logo} alt="" className="logo"/>
             </div>
             <div className="border-bottom p-4">
                 <div className="text-center text-white">
                     <img src="https://randomuser.me/api/portraits/men/75.jpg" alt=""  className="avatar"/>
                     <h5>Brad Gibson</h5>
-                    <p>brad.gibson@example.com</p>
+                    <span className="profile-email">brad.gibson@example.com</span>
                 </div>
             </div>
 
@@ -24,7 +24,8 @@ export default function Slidebar(){
                         <li>WORKSPACE 1</li>
                     </NavLink>
                     <NavLink to="/workspace2" className="slidebar-workspace2" activeClassName="slidebar-selected">
-                        <li> WORKSPACE 2</li>
+                        <li>
+                            WORKSPACE 2</li>
                     </NavLink>
                     <NavLink to="/analysis" className="slidebar-workspace3" activeClassName="slidebar-selected">
                         <li>ANALYSIS</li>

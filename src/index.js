@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -16,14 +17,14 @@ ReactDOM.render(
     <Provider store={store}>
       <BrowserRouter>
         <div className="row" style={{height: "100vh"}}>
-          <div className="col-sm-5 col-mb-4 col-lg-3 bg-black-custom" >
+          <div className="col-sm-5 col-mb-4 col-lg-3 col-xl-2 bg-black-custom" >
             <Slidebar/>
           </div>
-          <div className="col-sm-7 col-mb-8 col-lg-9">
-            <div className="row border">
+          <div className="col-sm-7 col-mb-8 col-lg-9 col-xl-10">
+            <div className="row bg-black-custom">
               <Menubar/>
             </div>
-            <div className="row border">
+            <div className="row bg-gray-custom">
               <App />
             </div>
           </div>

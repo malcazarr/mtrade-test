@@ -16,6 +16,10 @@ code {
   background: #000000 0% 0% no-repeat padding-box;
   opacity: 1;
 }
+.bg-gray-custom{
+  background: #1A202C 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
 .slidebar{
   height: 100vh;
 }
@@ -34,7 +38,7 @@ code {
   text-decoration: none;
   color: white;
 }
-.slidebar ul a li::before{
+.slidebar ul a li::before, .title-page{
   content: '';
   display: inline-block;
   width: 16px;
@@ -112,4 +116,45 @@ code {
 .avatar{
   border-radius: 50%;
   width: 40%;
+}
+.profile-email{
+  color: #FFFFFFD9;
+  font-size: 14px;
+}
+.avatar-menu{
+  border-radius: 50%;
+  width: 39px;
+}
+.menu-separator{
+  border-right: 2px #EBEBF2 solid;
+}
+.menu-username{
+  font-size: 13px;
+}
+.menu-search{
+  background-color: #2D3748;
+  border-color: #202837;
+  border-radius: 20px;
+  width: 150%;
+  color: #FFFFFF;
+  padding-left: 30px;
+  height: 39px;
+}
+.menu-search::placeholder{
+  color: #FFFFFF;
+  font-size: 12px;
+  opacity: 0.3;
+}
+.menu-search-icon{
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+.menu-align-icon{
+  position: relative;
+  margin-top: 4px;
+}
+.menu-icons{
+  position: relative;
+  margin-top: 8px;
 }
