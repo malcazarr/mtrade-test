@@ -7,10 +7,10 @@ export default function Slidebar(){
     console.log(userAuth)
     return (
         <div className="slidebar bg-black-custom">
-            <div className="border-bottom p-3">
+            <div className="border-bottom header">
                 <img src={logo} alt="" className="logo"/>
             </div>
-            <div className="border-bottom p-4">
+            <div className="border-bottom pt-4 pb-4">
                 <div className="text-center text-white">
                     <img src="https://randomuser.me/api/portraits/men/75.jpg" alt=""  className="avatar"/>
                     <h5>Brad Gibson</h5>

@@ -24,7 +24,7 @@ ReactDOM.render(
             <div className="row bg-black-custom">
               <Menubar/>
             </div>
-            <div className="row bg-gray-custom">
+            <div className="row bg-gray-custom text-white">
               <App />
             </div>
           </div>

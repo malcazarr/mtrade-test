@@ -133,7 +133,7 @@ code {
 }
 .menu-search{
   background-color: #2D3748;
-  border-color: #202837;
+  border:none;
   border-radius: 20px;
   width: 150%;
   color: #FFFFFF;
@@ -148,7 +148,7 @@ code {
 .menu-search-icon{
   position: absolute;
   margin-left: 10px;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 .menu-align-icon{
   position: relative;
@@ -156,5 +156,21 @@ code {
 }
 .menu-icons{
   position: relative;
-  margin-top: 8px;
+  margin-top: 10px;
+}
+.header{
+  height: 70px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.menu-username-icon-down{
+  margin-left: 3px;
+}
+.menu-username-icon-down:active{
+  transform: rotate(180deg);
+   -webkit-transform: rotate(180deg);
+   -ms-transform: rotate(180deg);
 }
