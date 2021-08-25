@@ -1,10 +1,17 @@
 import { Line } from 'react-chartjs-2';
-export const Charts = (props) =>{
+export const Charts = ({dataToGraph}) =>{
+    let labels = []
+    let montos = []
+    
+    dataToGraph.forEach(Item => {
+        labels.push(Item.fecha)
+        montos.push(parseFloat(Item.dato.replace(',','')))
+    });
 
     const data = {
-        labels: ['01/01/2019', '01/02/2019'],
+        labels: labels,
         datasets: [{
-            data: [11454.6, 11,454.6],
+            data: montos,
             backgroundColor: "#FFFFFF",
             borderColor: "#FFFFFF",
             borderWidth: 2

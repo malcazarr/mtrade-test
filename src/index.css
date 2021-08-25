@@ -297,16 +297,22 @@ code {
   font-size: 12px;
 }
 .slidebar-table{
+  display: none;
   cursor: pointer;
   position: absolute;
   z-index: 5;
   right: -200px;
-  transition: right .6s;
+  opacity: 0;
+  transition: right .6s, display .6s, opacity .6s;
+  overflow: scroll;
+  max-height: 700px;
 }
 .slidebar-table.active{
+  display: block;
   position: absolute;
   right: 0;
-  transition: right 1;
+  opacity: 1;
+  transition: right 1s, display 1s, opacity 1s;
   transition-delay: .5s;
 }
 /* .slidebar-right-active{
@@ -332,4 +338,35 @@ code {
   border-radius: 5px;
   left: -9px;
   top: -8px;
+}
+.notifier-content{
+  position: absolute;
+  z-index: 10;
+  left: 35%;
+  background-color: rgba(0, 0, 0, 0.829);
+  width: 400px;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  box-shadow: 5px 5px 5px 2px rgba(95, 95, 95, 0.2);
+}
+.notifier-content.deactive{
+  top: -200px;
+  transition: top 2s;
+}
+.notifier-content.active{
+  top: 0;
+  transition: top 2s;
+}
+.notifier-close{
+  font-size: 10px;
+  color: white;
+  text-align: right;
+  margin-right: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.notifier-message{
+  padding: 5px 0; 
+  font-size: 14px;
 }

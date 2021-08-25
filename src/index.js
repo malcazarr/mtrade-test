@@ -7,28 +7,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
-import Menubar from './components/Menubar';
-import Slidebar from './components/Slidebar';
 import { BrowserRouter } from 'react-router-dom';
+
 
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
-        <div className="row bg-gray-custom" style={{height: "100vh"}}>
-          <div className="col-sm-5 col-mb-4 col-lg-3 col-xl-2 bg-black-custom" >
-            <Slidebar/>
-          </div>
-          <div className="col-sm-7 col-mb-8 col-lg-9 col-xl-10">
-            <div className="row bg-black-custom">
-              <Menubar/>
-            </div>
-            <div className="row bg-gray-custom text-white">
-              <App />
-            </div>
-          </div>
-        </div>
+        <App/>
       </BrowserRouter>
     </Provider>
   </React.StrictMode>,
