@@ -8,7 +8,7 @@ export default function Menubar(){
     }
     return (
         <div className="row bg-black-custom text-white">
-            <div className="border-bottom header d-flex justify-content-between">
+            <div className="header d-flex justify-content-between">
                 <div className="d-flex justify-content-start">
                     <div className="px-2">
                         <i className="fa fa-bars menu-icons"></i>
@@ -24,11 +24,12 @@ export default function Menubar(){
                     </div>
                     <div className="menu-separator px-2">
                         <i className="fa fa-bell menu-icons"></i> 
+                        <div className="badge">3</div>
                     </div>
                     <div className="px-2">
                             <div className="menu-username menu-icons cursor-pointer" onClick={collapseController}>
                                 Brad Gibson
-                                <i className="fa fa-chevron-down menu-username-icon-down"></i>
+                                <i className={!collapse ? "fa fa-chevron-down menu-username-icon-down": "fa fa-chevron-up menu-username-icon-down"}></i>
                             </div>
                         <Collapse  in={collapse}>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">

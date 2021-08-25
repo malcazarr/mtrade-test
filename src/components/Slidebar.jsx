@@ -10,11 +10,11 @@ export default function Slidebar(){
             <div className="border-bottom header">
                 <img src={logo} alt="" className="logo"/>
             </div>
-            <div className="border-bottom pt-4 pb-4">
+            <div className="border-bottom py-5">
                 <div className="text-center text-white">
                     <img src="https://randomuser.me/api/portraits/men/75.jpg" alt=""  className="avatar"/>
-                    <h5>Brad Gibson</h5>
-                    <span className="profile-email">brad.gibson@example.com</span>
+                    <div className="profile-name">Brad Gibson</div>
+                    <div className="profile-email">brad.gibson@example.com</div>
                 </div>
             </div>
 

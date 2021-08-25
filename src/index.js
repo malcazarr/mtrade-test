@@ -16,7 +16,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
-        <div className="row" style={{height: "100vh"}}>
+        <div className="row bg-gray-custom" style={{height: "100vh"}}>
           <div className="col-sm-5 col-mb-4 col-lg-3 col-xl-2 bg-black-custom" >
             <Slidebar/>
           </div>

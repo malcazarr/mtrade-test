@@ -9,7 +9,7 @@ import Workspace6 from './pages/Workspace6';
 
 function App() {
   return (
-    <div>
+    <div className="bg-gray-custom">
       <Route exact path="/" component={Workspace1} />
       <Route path="/workspace2" component={Workspace2} />
       <Route path="/analysis" component={Analisys} />
