@@ -1,12 +1,27 @@
-# Getting Started with Create React App
+# ReactJS Challenge to Job
 
-This is a test for mtrade for get job.
+This is my test for mtrade job.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This test was created with "REACTJS, HOOKS AND REDUX", on different lavels to show some techniques abilities.
 
-## Available Scripts
+To get more information about this test, please, go to ### Learn More About The Challenge ### section
 
-In the project directory, you can run:
+### `Reactjs`
+### `Hooks`
+### `Redux`
+### `Bootstrap`
+### `Axios`
+
+
+## `Start Process`
+
+You can download this repo for get my challenge. 
+This repo will be available public temporally
+
+After download, in the project directory, you can run:
+
+### `npm install`
+to get all library neecessary
 
 ### `npm start`
 
@@ -15,11 +30,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -33,40 +43,27 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Learn More About The Challenge
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This challenge get info to Banxico API and show graphics with data collected.
 
-## Learn More
+The profile is hard code, because wasn't indicated getting from another API.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The principal page is Analysis, it has all functionality to get information from Banxico API
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can control, the way and time of get information in the section "/src/pages/Analysis.jsx" from your code editor
 
-### Code Splitting
+You can uncomment a section of code in that file, for create a fail simulation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+### Creating a fail simulation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+You can create a fail simulation editing the file "/src/redux/services/endpoints.js", is enogh change a variable for get a fail.
 
-### Advanced Configuration
+Note: The types of failures is not controlled, currently show the error message from axios directly, but only the message, the codes don´t will be shown.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Developer: Pedro Alcázar
