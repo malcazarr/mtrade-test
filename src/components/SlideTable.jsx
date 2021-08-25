@@ -1,10 +1,10 @@
 
-const SlideTable = ({slidebarRight, activeSlidebarRight}) =>{
+const SlideTable = ({data,slidebarRight, activeSlidebarRight}) =>{
     const activeSlidebar = ()=>{
         activeSlidebarRight();
     }
     return (
-        <div className={slidebarRight? "slidebar-table active card": "slidebar-table card"}>
+        <div className={slidebarRight.status? "slidebar-table active card": "slider slidebar-table card"}>
             <div className="card-header Roboto-mono font-14" onClick={activeSlidebar}>
                 <i className="fa fa-list" /> Gasto total
             </div>
@@ -18,9 +18,17 @@ const SlideTable = ({slidebarRight, activeSlidebarRight}) =>{
                             </tr>
                         </thead>
                         <tbody>
+                            {
+                                data && data.map((item, index) =>{
+                                    return(
+                                        <tr key={index}>
+                                            <td className="Roboto-mono font-12 text-center">{item.fecha}</td>
+                                            <td className="Roboto-mono font-12">{item.dato}</td>
+                                        </tr>
+                                    )
+                                })
+                            }
                             <tr>
-                                <td className="Roboto-mono font-12 text-center">10/10/2021</td>
-                                <td className="Roboto-mono font-12">$ 5,000.00</td>
                             </tr>
                         </tbody>
                     </table>

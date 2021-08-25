@@ -1,0 +1,3 @@
+export const token = "b33dd5a7ffcc740592cf325439378d52460022dcaf58980ae6f23b042454920c"
+export const url_base_data = "https://www.banxico.org.mx/SieAPIRest/service/v1/series/SG46,SG47,SG44,SG71,SG73,SG74,SG48,SG49,SG69,SG52,SG75,SG76,SG53,SG42,SG45,SG72/datos/2019-01-01/2021-02-01?token="
+export const url_base_metadata = "https://www.banxico.org.mx/SieAPIRest/service/v1/series/SG46,SG47,SG44,SG71,SG73,SG74,SG48,SG49,SG69,SG52,SG75,SG76,SG53,SG42,SG45,SG72?token="
