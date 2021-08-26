@@ -23,7 +23,8 @@ code {
   opacity: 1;
 }
 .slidebar{
-  height: 100vh;
+  height: 100wh;
+  transition: display 1s;
 }
 .slidebar ul{
   list-style-type:none ;
@@ -172,7 +173,7 @@ code {
   margin-top: 10px;
 }
 .header{
-  height: 70px;
+  min-height: 70px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -369,4 +370,53 @@ code {
 .notifier-message{
   padding: 5px 0; 
   font-size: 14px;
+}
+.btn-menu{
+  cursor: pointer;
+  border-radius: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.close{
+  display: none;
+}
+
+
+@media screen and (max-width: 780px) {
+   .slidebar{
+     z-index: 10;
+   }
+   .menu{
+     padding-left: 3%;
+   }
+}
+@media screen and (max-width: 380px) {
+   .slidebar{
+     position: absolute;
+     z-index: 10;
+     height: 100vh;
+   }
+   .menu{
+     padding-left: 3%;
+    }
+    .close{
+     padding-top: 3%;
+     display: block;
+     color: white;
+     text-align: right;
+     cursor: pointer;
+   }
+   .search-content{
+     display: none;
+   }
+   .content-title{
+     text-align: center;
+   }
+}
+
+
+.body{
+  overflow: none;
 }

@@ -47,16 +47,16 @@ function Analisys({
         // Uncomment this section for checking work with con local data.
         // may be will be failed, because first is necessary save the data manually with the bottons.
         // You can validate the failed messages, using this part, without click on button to storage 
-        // console.log("DESDE STORAGE")
-        // getDataFromStore()
-        // getMetaDataFromStore()
+        console.log("GET FROM STORAGE")
+        getDataFromStore()
+        getMetaDataFromStore()
 
     },[data.stored,metaData.stored])
     useEffect(() =>{
         // This section get data automatically, you can check the console for watch the interaction 
-        console.log("DESDE API")
-        getData()
-        getMetaData()
+        // console.log("GET FROM API")
+        // getData()
+        // getMetaData()
     },[data.saved, metaData.saved])
 
     return (
@@ -66,11 +66,11 @@ function Analisys({
                     <span className="title-page title-workspace3">ANALYSIS</span>
                     {/* 
                     *** Uncomment this section for check the funcions for get data from API and Localstorage ***
+                    <button onClick={storeRequestedData}>Store Data</button>
+                    <button onClick={storeRequestMetaData}>Store Metadata</button>
                     
                     <button onClick={requestData}>Call Data</button>
                     <button onClick={requestMetadata}>Call Metadata</button>
-                    <button onClick={storeRequestedData}>Store Data</button>
-                    <button onClick={storeRequestMetaData}>Store Metadata</button>
                     <button onClick={getFromLocalstorage}>Get data from storage</button>
                     <button onClick={getMetaFromLocalstorage}>Get Meta from storage</button> */}
                 </div>

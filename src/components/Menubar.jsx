@@ -1,19 +1,22 @@
 import { useState } from "react";
 import { Collapse } from "react-bootstrap";
-export default function Menubar(){
+export default function Menubar({activeSlideBarLeft}){
     const [collapse, setCollapse] = useState(false) 
 
     const collapseController = () =>{
         setCollapse(!collapse)
     }
+    const activeslideleft = () =>{
+        activeSlideBarLeft()
+    }
     return (
-        <div className="row bg-black-custom text-white">
+        <div className="menu row bg-black-custom text-white">
             <div className="header d-flex justify-content-between">
                 <div className="d-flex justify-content-start">
-                    <div className="px-2">
+                    <div className="px-2 btn-menu" onClick={activeslideleft}>
                         <i className="fa fa-bars menu-icons"></i>
                     </div>
-                    <div className="px-2">
+                    <div className="px-2 search-content">
                         <i className="fa fa-search menu-search-icon"></i>
                         <input className="menu-search" id="search" name="search" placeholder="Search securities, transactions, info or help"/>
                     </div>
