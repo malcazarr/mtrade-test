@@ -58,7 +58,8 @@ export const getDataFromStore = () =>{
     return dispatch =>{
         dispatch(getDataStart())
         const data = JSON.parse(localStorage.getItem('Data_Graphics'))
-        if (data && data.stored){
+        console.log(data)
+        if (data && data.saved){
             dispatch(getDataSuccess(data.data))
         }else{
             const error = {

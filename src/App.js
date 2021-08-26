@@ -18,12 +18,16 @@ function App() {
     <div>
       <Notifier></Notifier>
       <div className="row bg-gray-custom" style={{height: "100vh"}}>
-        <div className={slidebar? "col-sm-5 col-mb-4 col-lg-3 col-xl-2 bg-black-custom" : "d-none"}>
-          <Slidebar/>
+        <div className={slidebar? "slidebar col-sm-5 col-mb-4 col-lg-3 col-xl-2 bg-black-custom" : "slidebar d-none"}>
+          <Slidebar activeSlideBarLeft={()=>{
+                setSlidebar(!slidebar)
+            }}/>
         </div>
-        <div className="col-sm-7 col-mb-8 col-lg-9 col-xl-10">
+        <div className= {slidebar? "col-sm-7 col-mb-8 col-lg-9 col-xl-10" :"col-12"}>
           <div className="row bg-black-custom">
-            <Menubar/>
+            <Menubar activeSlideBarLeft={()=>{
+                setSlidebar(!slidebar)
+            }}/>
           </div>
           <div className="row bg-gray-custom text-white">
             <Route exact path="/" component={Workspace1} />
