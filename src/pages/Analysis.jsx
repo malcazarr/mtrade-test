@@ -47,16 +47,16 @@ function Analisys({
         // Uncomment this section for checking work with con local data.
         // may be will be failed, because first is necessary save the data manually with the bottons.
         // You can validate the failed messages, using this part, without click on button to storage 
-        console.log("GET FROM STORAGE")
-        getDataFromStore()
-        getMetaDataFromStore()
+        // console.log("GET FROM STORAGE")
+        // getDataFromStore()
+        // getMetaDataFromStore()
 
     },[data.stored,metaData.stored])
     useEffect(() =>{
         // This section get data automatically, you can check the console for watch the interaction 
-        // console.log("GET FROM API")
-        // getData()
-        // getMetaData()
+        console.log("GET FROM API")
+        getData()
+        getMetaData()
     },[data.saved, metaData.saved])
 
     return (
