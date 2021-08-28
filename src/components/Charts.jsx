@@ -43,7 +43,7 @@ export const Charts = ({dataToGraph}) =>{
         }   
     }
     return (
-        <div style={{height: "200px"}}>
+        <div>
             <Line height={50} data={data} options={options}/>
         </div>
 
