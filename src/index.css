@@ -387,10 +387,19 @@ code {
 @media screen and (max-width: 780px) {
    .slidebar{
      z-index: 10;
+     height: 100vh;
    }
    .menu{
      padding-left: 3%;
    }
+   .close{
+    display: block;
+    padding-top: 3%;
+    display: block;
+    color: white;
+    text-align: right;
+    cursor: pointer;
+  }
 }
 @media screen and (max-width: 380px) {
    .slidebar{
